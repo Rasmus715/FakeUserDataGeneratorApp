@@ -8,12 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="728578ab-9b03-40a7-9a69-13f10675e843" name="Changes" comment="feat: implement export to .csv">
-      <change afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Services/TempDataExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FakeUserDataGenerator/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/wwwroot/js/InfiniteScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/wwwroot/js/InfiniteScroll.js" afterDir="false" />
+    <list default="true" id="728578ab-9b03-40a7-9a69-13f10675e843" name="Changes" comment="fix: fix paths">
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Services/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Services/IUserService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +32,12 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/crack/RiderProjects/FakeUserDataGenerator/FakeUserDataGenerator/Services/IUserService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/crack/RiderProjects/FakeUserDataGenerator/FakeUserDataGenerator/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/108761935b694f1d96a2f41e89387252a0156b1385884e1a35e82b2531187d4/ITempDataDictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0b2b71b9a548475f9db13de2a63308dea234a8/68/b6b49df9/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/crack/RiderProjects/FakeUserDataGenerator/FakeUserDataGenerator/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/crack/RiderProjects/FakeUserDataGenerator/FakeUserDataGenerator/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/crack/RiderProjects/FakeUserDataGenerator/FakeUserDataGenerator/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -102,7 +102,7 @@
       <updated>1668784301863</updated>
       <workItem from="1668784322158" duration="5820000" />
       <workItem from="1668934975277" duration="13026000" />
-      <workItem from="1669024501577" duration="19483000" />
+      <workItem from="1669024501577" duration="21460000" />
     </task>
     <task id="LOCAL-00001" summary="feat: implement export to .csv">
       <created>1669044037009</created>
@@ -111,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669044037009</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: bump infinite scroll, add proper docker support">
+      <created>1669044177623</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669044177623</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: fix paths">
+      <created>1669045979597</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669045979597</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +148,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="feat: implement export to .csv" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implement export to .csv" />
+    <MESSAGE value="feat: bump infinite scroll, add proper docker support" />
+    <MESSAGE value="fix: fix paths" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix paths" />
   </component>
 </project>

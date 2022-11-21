@@ -22,7 +22,7 @@ public class UserService : IUserService
         seed += firstItem / 50;
         var random = new Random(seed.GetHashCode());
 
-        var dataset = Environment.CurrentDirectory + Path.Combine("Datasets", country);
+        var dataset = Path.Combine(Environment.CurrentDirectory, "Datasets", country);
 
         var isMale = random.Next() > int.MaxValue / 2;
         var names = isMale
