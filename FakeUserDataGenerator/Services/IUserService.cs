@@ -10,6 +10,8 @@ public interface IUserService
         string country, 
         double errors, 
         int firstItem = 1);
+
+    //public Task<byte[]> ExportToExcel(IFormCollection formCollection);
 }
 
 public class UserService : IUserService

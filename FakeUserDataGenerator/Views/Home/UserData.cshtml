@@ -4,6 +4,7 @@
     ViewData["Title"] = "UserData";
 }
 
+
 <div class="d-flex flex-row justify-content-center">
     
     <select name="region" id="region" onchange="clearTable(); populateTable();">
@@ -13,44 +14,53 @@
         <option value="Russia">Russia / Russian</option>
     </select>
 
+
     <input id="amount" type="number" value="5" min="0" max="1000" step="0.25" oninput="rangeInput.value=amount.value" onchange="limit(this); clearTable(); populateTable()" style="margin-right: 5px; margin-left: 5px;" />
     <input id="rangeInput" type="range" min="0" max="10.0" step="0.25" oninput="amount.value=rangeInput.value" onchange="clearTable(); populateTable()" style="margin-right: 5px;"/>
     <input id="seed" placeholder="Seed" style="margin-right: 5px; width: 175px" onchange="clearTable(); populateTable()"/>
-    <input value="Random" class="btn btn-danger rounded d-block p-2" style="margin-right: 5px; width: 75px" alt="Randomize seed" readonly="readonly" onclick="RandomizeSeed();clearTable(); populateTable()">
+    <input value="Random" class="btn btn-danger rounded d-block p-2" style="margin-right: 5px; width: 85px" alt="Randomize seed" readonly="readonly" onclick="RandomizeSeed();clearTable(); populateTable()">
+ <input value="Export to CSV" class="btn btn-success rounded d-block p-2" style="margin-right: 5px; width: 130px" alt="Export" readonly="readonly" onclick="exportToCsv()"/>
     </div>
-<table id="dataTable" class="table">
-    <thead>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Index)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Id)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Address)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PhoneNumber)
-        </th>
-    </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
+
+<div id="tableContainer" style="margin-top:20px;height:500px;width:1250px;overflow: auto;">
+    <table id="dataTable" class="table">
+        <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Index)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                Phone Number
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<input value="Export to CSV" class="btn btn-success rounded d-block p-2" style="margin-top: 25px; width: 130px" alt="Export" readonly="readonly" onclick="exportToCsv()"/>
 
 @section Scripts {
     <script src="~/js/InfiniteScroll.js"></script>
-
+    <script src="~/js/ExportToCSV.js"></script>
     <script>
-    new InfiniteScroll("dataTable", "/home/_UserData", { seed: document.getElementById("seed").value, country: document.getElementById("region").value })
+    new InfiniteScroll("tableContainer", "dataTable", "/home/_UserData", { seed: document.getElementById("seed").value, country: document.getElementById("region").value })
      
      function populateTable()
      {
-          new InfiniteScroll("dataTable", "/home/_UserData", { seed: document.getElementById("seed").value, country: document.getElementById("region").value, errors: document.getElementById("amount").value })
+          new InfiniteScroll("tableContainer", "dataTable", "/home/_UserData", { seed: document.getElementById("seed").value, country: document.getElementById("region").value, errors: document.getElementById("amount").value })
+            var cont = document.getElementById("tableContainer");
+          console.log(cont.scrollHeight);
+          //console.log(cont.scrollHeight - cont.clientHeight);
      }
          function RandomizeSeed()
          {
@@ -75,5 +85,9 @@
            if (input.value > 1000) input.value = 1000;
         }
         
+        function exportToCsv()
+        {
+        new ExportToCSV();
+        }
     </script>
 }

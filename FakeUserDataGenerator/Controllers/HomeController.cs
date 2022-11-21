@@ -2,6 +2,9 @@
 using Microsoft.AspNetCore.Mvc;
 using FakeUserDataGenerator.Models;
 using FakeUserDataGenerator.Services;
+using Newtonsoft.Json;
+using OfficeOpenXml;
+using OfficeOpenXml.Table;
 
 namespace FakeUserDataGenerator.Controllers;
 
@@ -41,12 +44,30 @@ public class HomeController : Controller
         if (!userData.Any()) 
             return StatusCode(204); 
         
-        //_userService.GenerateUserData(seed, "Russia", 0, firstItem);
-          
         return PartialView(userData.ToList());
     }
 
+    [HttpGet]
+    public ActionResult DownloadCsv()
+    {
+        var array = TempData.Get<byte[]>("Output");
+        if (array != null)
+        {
+            return File(array, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"UserList-{DateTime.Now:yyyyMMddHHmmssfff}.xlsx");
+        }
 
+        return new EmptyResult();
+    } 
+    [HttpPost]
+    public async Task<IActionResult> Export(List<UserData> userList)
+    {
+        using var package = new ExcelPackage();
+        var worksheet = package.Workbook.Worksheets.Add("Worksheet 1");
+        worksheet.Cells.LoadFromCollection(userList);
+        TempData.Put("Output", await package.GetAsByteArrayAsync());
+        return Json("Success");
+    }
+    
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

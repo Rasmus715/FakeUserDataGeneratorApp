@@ -24,3 +24,16 @@ C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\obj\Deb
 C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\obj\Debug\net6.0\FakeUserDataGenerator.pdb
 C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\obj\Debug\net6.0\FakeUserDataGenerator.genruntimeconfig.cache
 C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\obj\Debug\net6.0\ref\FakeUserDataGenerator.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\EPPlus.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\EPPlus.Interfaces.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\EPPlus.System.Drawing.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\obj\Debug\net6.0\FakeUserDataGenerator.csproj.CopyComplete
+C:\Users\crack\RiderProjects\FakeUserDataGenerator\FakeUserDataGenerator\bin\Debug\net6.0\Newtonsoft.Json.dll

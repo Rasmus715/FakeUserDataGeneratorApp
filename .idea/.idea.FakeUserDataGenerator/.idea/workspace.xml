@@ -8,7 +8,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="728578ab-9b03-40a7-9a69-13f10675e843" name="Changes" comment="" />
+    <list default="true" id="728578ab-9b03-40a7-9a69-13f10675e843" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Services/TempDataExtensions.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FakeUserDataGenerator/wwwroot/js/ExportToCSV.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FakeUserDataGenerator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FakeUserDataGenerator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/FakeUserDataGenerator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/FakeUserDataGenerator.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Services/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Services/IUserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Views/Home/UserData.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Views/Home/UserData.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Views/Home/_UserData.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Views/Home/_UserData.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.staticwebassets.runtime.json" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.staticwebassets.runtime.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/ref/FakeUserDataGenerator.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/ref/FakeUserDataGenerator.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/refint/FakeUserDataGenerator.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/refint/FakeUserDataGenerator.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/staticwebassets.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/staticwebassets.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/FakeUserDataGenerator.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/FakeUserDataGenerator.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/wwwroot/js/InfiniteScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/wwwroot/js/InfiniteScroll.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,10 +53,22 @@
       </list>
     </option>
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/108761935b694f1d96a2f41e89387252a0156b1385884e1a35e82b2531187d4/ITempDataDictionary.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Hj2is3NOwZwS0pqb0vHTZsbzbp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -82,15 +126,27 @@
       <updated>1668784301863</updated>
       <workItem from="1668784322158" duration="5820000" />
       <workItem from="1668934975277" duration="13026000" />
-      <workItem from="1669024501577" duration="8689000" />
+      <workItem from="1669024501577" duration="19088000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

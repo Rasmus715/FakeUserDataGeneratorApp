@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wo65L8cNgc2SWS9LcmDj4C/ejkh+FAL2CpenCSU7R+s=",
+  "Hash": "BXrYGintF66gVRoRAFIsGl06W3+War6NoWNDstN72/E=",
   "Source": "FakeUserDataGenerator",
   "BasePath": "_content/FakeUserDataGenerator",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\crack\\RiderProjects\\FakeUserDataGenerator\\FakeUserDataGenerator\\wwwroot\\js\\ExportToCSV.js",
+      "SourceId": "FakeUserDataGenerator",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\crack\\RiderProjects\\FakeUserDataGenerator\\FakeUserDataGenerator\\wwwroot\\",
+      "BasePath": "_content/FakeUserDataGenerator",
+      "RelativePath": "js/ExportToCSV.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ExportToCSV.js"
     },
     {
       "Identity": "C:\\Users\\crack\\RiderProjects\\FakeUserDataGenerator\\FakeUserDataGenerator\\wwwroot\\js\\InfiniteScroll.js",
