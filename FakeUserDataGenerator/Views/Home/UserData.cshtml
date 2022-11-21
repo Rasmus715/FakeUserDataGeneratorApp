@@ -19,8 +19,7 @@
     <input id="rangeInput" type="range" min="0" max="10.0" step="0.25" oninput="amount.value=rangeInput.value" onchange="clearTable(); populateTable()" style="margin-right: 5px;"/>
     <input id="seed" placeholder="Seed" style="margin-right: 5px; width: 175px" onchange="clearTable(); populateTable()"/>
     <input value="Random" class="btn btn-danger rounded d-block p-2" style="margin-right: 5px; width: 85px" alt="Randomize seed" readonly="readonly" onclick="RandomizeSeed();clearTable(); populateTable()">
- <input value="Export to CSV" class="btn btn-success rounded d-block p-2" style="margin-right: 5px; width: 130px" alt="Export" readonly="readonly" onclick="exportToCsv()"/>
-    </div>
+   </div>
 
 <div id="tableContainer" style="margin-top:20px;height:500px;width:1250px;overflow: auto;">
     <table id="dataTable" class="table">
