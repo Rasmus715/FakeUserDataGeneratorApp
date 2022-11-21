@@ -1,0 +1,79 @@
+﻿@model IEnumerable<UserData>
+
+@{
+    ViewData["Title"] = "UserData";
+}
+
+<div class="d-flex flex-row justify-content-center">
+    
+    <select name="region" id="region" onchange="clearTable(); populateTable();">
+        <option value="None" selected disabled hidden>Region</option>
+        <option value="USA">USA / English</option>
+        <option value="Poland">Poland / Polish</option>
+        <option value="Russia">Russia / Russian</option>
+    </select>
+
+    <input id="amount" type="number" value="5" min="0" max="1000" step="0.25" oninput="rangeInput.value=amount.value" onchange="limit(this); clearTable(); populateTable()" style="margin-right: 5px; margin-left: 5px;" />
+    <input id="rangeInput" type="range" min="0" max="10.0" step="0.25" oninput="amount.value=rangeInput.value" onchange="clearTable(); populateTable()" style="margin-right: 5px;"/>
+    <input id="seed" placeholder="Seed" style="margin-right: 5px; width: 175px" onchange="clearTable(); populateTable()"/>
+    <input value="Random" class="btn btn-danger rounded d-block p-2" style="margin-right: 5px; width: 75px" alt="Randomize seed" readonly="readonly" onclick="RandomizeSeed();clearTable(); populateTable()">
+    </div>
+<table id="dataTable" class="table">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Index)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+@section Scripts {
+    <script src="~/js/InfiniteScroll.js"></script>
+
+    <script>
+    new InfiniteScroll("dataTable", "/home/_UserData", { seed: document.getElementById("seed").value, country: document.getElementById("region").value })
+     
+     function populateTable()
+     {
+          new InfiniteScroll("dataTable", "/home/_UserData", { seed: document.getElementById("seed").value, country: document.getElementById("region").value, errors: document.getElementById("amount").value })
+     }
+         function RandomizeSeed()
+         {
+            const seed = document.getElementById("seed");
+            seed.value = parseInt(Math.random() * 1e15);
+         }
+             
+      
+        function clearTable()
+        {
+          const table = document.getElementById("dataTable");
+          const tableHeaderRowCount = 1;
+          const rowCount = table.rows.length;
+          for (let i = tableHeaderRowCount; i < rowCount; i++) {
+              table.deleteRow(tableHeaderRowCount);
+          }
+        }
+        
+
+        function limit(input) {
+           if (input.value < 0) input.value = 0;
+           if (input.value > 1000) input.value = 1000;
+        }
+        
+    </script>
+}
