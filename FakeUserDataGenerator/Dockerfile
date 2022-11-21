@@ -5,10 +5,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["FakeUserDataGenerator/FakeUserDataGenerator.csproj", "FakeUserDataGenerator/"]
-RUN dotnet restore "FakeUserDataGenerator/FakeUserDataGenerator.csproj"
+COPY ["FakeUserDataGenerator.csproj", "./"]
+RUN dotnet restore "FakeUserDataGenerator.csproj"
 COPY . .
-WORKDIR "/src/FakeUserDataGenerator"
+WORKDIR "/src/"
 RUN dotnet build "FakeUserDataGenerator.csproj" -c Release -o /app/build
 
 FROM build AS publish

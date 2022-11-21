@@ -1,5 +1,6 @@
-function InfiniteScroll(iTable, iAction, iParams) {
+function InfiniteScroll(iContainer, iTable, iAction, iParams) {
     const self = this;
+    this.container = iContainer;
     this.table = iTable;
     this.action = iAction;
     this.params = iParams;
@@ -26,9 +27,10 @@ function InfiniteScroll(iTable, iAction, iParams) {
                 $("#footer").css("display", "none"); 
             });
     }
-    
-        window.onscroll = function (ev) {
-            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+
+    let container = document.getElementById(iContainer);
+    container.onscroll = function (ev) {
+            if ((container.scrollHeight - container.clientHeight) === container.scrollTop) {
                 if (!self.loading) {
                     let itemCount = $('#' + self.table + ' tr').length - 1;
                     self.AddTableLines(itemCount);
