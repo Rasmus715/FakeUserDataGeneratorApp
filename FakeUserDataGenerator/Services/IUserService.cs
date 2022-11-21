@@ -22,28 +22,28 @@ public class UserService : IUserService
         seed += firstItem / 50;
         var random = new Random(seed.GetHashCode());
 
-        var dataset = Environment.CurrentDirectory + @$"\Datasets\{country}";
+        var dataset = Environment.CurrentDirectory + Path.Combine("Datasets", country);
 
         var isMale = random.Next() > int.MaxValue / 2;
         var names = isMale
-            ? File.ReadAllLines($@"{dataset}\MaleNames.txt")
-            : File.ReadAllLines($@"{dataset}\FemaleNames.txt");
+            ? File.ReadAllLines(Path.Combine(dataset, "MaleNames.txt"))
+            : File.ReadAllLines(Path.Combine(dataset, "FemaleNames.txt"));
         string[] surnames;
         if (country.Equals("Russia"))
             surnames = isMale
-                ? File.ReadAllLines($@"{dataset}\MaleSurnames.txt")
-                : File.ReadAllLines($@"{dataset}\FemaleSurnames.txt");
+                ? File.ReadAllLines(Path.Combine(dataset,"MaleSurnames.txt"))
+                : File.ReadAllLines(Path.Combine(dataset,"FemaleSurnames.txt"));
         else
-            surnames = File.ReadAllLines($@"{dataset}\Surnames.txt");
-        var cities = File.ReadAllLines($@"{dataset}\Cities.txt");
-        var streets = File.ReadAllLines($@"{dataset}\Streets.txt");
+            surnames =File.ReadAllLines(Path.Combine(dataset,"Surnames.txt"));
+        var cities = File.ReadAllLines(Path.Combine(dataset,"Cities.txt"));
+        var streets = File.ReadAllLines(Path.Combine(dataset,"Streets.txt"));
 
         var middleNames = Array.Empty<string>();
         if (country.Equals("Russia"))
             middleNames = isMale
-                ? File.ReadAllLines($@"{dataset}\MaleMiddleNames.txt")
-                : File.ReadAllLines($@"{dataset}\FemaleMiddleNames.txt");
-        var operatorCodes = File.ReadAllLines($@"{dataset}\OperatorCodes.txt");
+                ? File.ReadAllLines(Path.Combine(dataset,"MaleMiddleNames.txt"))
+                : File.ReadAllLines(Path.Combine(dataset,"FemaleMiddleNames.txt"));
+        var operatorCodes = File.ReadAllLines(Path.Combine(dataset,"OperatorCodes.txt"));
 
         if (firstItem == 0)
             firstItem = 1;
