@@ -57,16 +57,53 @@ public class HomeController : Controller
         }
 
         return new EmptyResult();
-    } 
+    }
+
     [HttpPost]
+    public ActionResult Export(IFormCollection formCollection)
+    {
+        //Console.WriteLine(formCollection.Keys.Count);
+        /*foreach (var x in formCollection)
+        {
+            Console.WriteLine("Key: " + x.Key);
+            Console.WriteLine("Value: " + x.Value);
+        }*/
+        
+        //Console.WriteLine(formCollection.Count);
+
+        var userList = new List<UserData>();
+        for (var i = 0; i < formCollection.Keys.Count / 5 - 1; i++)
+        {
+            var user = new UserData
+            {
+                Index = formCollection[$"userList[{i}][Index]"],
+                Id = formCollection[$"userList[{i}][Id]"],
+                Name = formCollection[$"userList[{i}][Name]"],
+                Address = formCollection[$"userList[{i}][Address]"],
+                PhoneNumber = formCollection[$"userList[{i}][PhoneNumber]"]
+            };
+            userList.Add(user);
+        }
+        
+        var stream = new MemoryStream();
+        using var package = new ExcelPackage(stream);
+        var workSheet = package.Workbook.Worksheets.Add("Sheet1");  
+        workSheet.Cells.LoadFromCollection(userList, true);  
+        package.Save();  
+        return File(package.GetAsByteArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "UserData.csv");
+    }
+    
+    /*[HttpPost]
     public async Task<IActionResult> Export(List<UserData> userList)
     {
+        Console.WriteLine(userList.Count);
         using var package = new ExcelPackage();
         var worksheet = package.Workbook.Worksheets.Add("Worksheet 1");
         worksheet.Cells.LoadFromCollection(userList);
-        TempData.Put("Output", await package.GetAsByteArrayAsync());
-        return Json("Success");
-    }
+        //TempData.Put("Output", await package.GetAsByteArrayAsync());
+        //return Json("Success");
+        return File(await package.GetAsByteArrayAsync(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"UserList-{DateTime.Now:yyyyMMddHHmmssfff}.xlsx");
+    }*/
     
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

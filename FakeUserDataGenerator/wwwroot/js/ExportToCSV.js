@@ -1,12 +1,5 @@
 ﻿function ExportToCSV(){
     var result = [];
-    result.push({
-        "Index" : "Index",
-        "Id" : "Id",
-        "Name" : "Name",
-        "Address" : "Address",
-        "PhoneNumber" : "Phone Number"
-    })
     var tr = $("#dataTable tr");
     for (var i = 1; i < tr.length; i++)
     {
@@ -28,17 +21,47 @@
     var jsonData = {
         "userList" : result
     }
-    
+
+
     $.ajax({
-        dataType: 'json',
-        type: "Post",
-        data: jsonData,
         url: "/Home/Export",
-        success: function (result) {
-            if (result === "Success") {
-                location.href = "/Home/DownloadCsv";
-            }
+        method: 'POST',
+        data: jsonData,
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'userData.csv';
+            document.body.append(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
         }
     });
-
+    
+    /*$.ajax({
+        type: "POST",
+        url: "/Home/Export",
+        dataType: 'json',
+        data: jsonData,
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            console.log("success");
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'UserData.csv';
+            a.click();
+            window.URL.revokeObjectURL(url);
+        },
+        fail : function (data)
+        {
+            console.log("fail");
+        }
+    });*/
 }

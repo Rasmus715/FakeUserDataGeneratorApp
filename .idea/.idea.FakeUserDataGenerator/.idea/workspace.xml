@@ -8,8 +8,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="728578ab-9b03-40a7-9a69-13f10675e843" name="Changes" comment="fix: fix paths">
-      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Services/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Services/IUserService.cs" afterDir="false" />
+    <list default="true" id="728578ab-9b03-40a7-9a69-13f10675e843" name="Changes" comment="fix: remove extra &quot;export to csv&quot; button">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FakeUserDataGenerator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FakeUserDataGenerator/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Controllers/HomeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/FakeUserDataGenerator.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/FakeUserDataGenerator.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Views/Home/UserData.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Views/Home/UserData.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/Views/Home/_UserData.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/Views/Home/_UserData.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/bin/Debug/net6.0/FakeUserDataGenerator.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/FakeUserDataGenerator.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/ref/FakeUserDataGenerator.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/ref/FakeUserDataGenerator.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/refint/FakeUserDataGenerator.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/Debug/net6.0/refint/FakeUserDataGenerator.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FakeUserDataGenerator/wwwroot/js/ExportToCSV.js" beforeDir="false" afterPath="$PROJECT_DIR$/FakeUserDataGenerator/wwwroot/js/ExportToCSV.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +66,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.49542683" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -102,7 +116,7 @@
       <updated>1668784301863</updated>
       <workItem from="1668784322158" duration="5820000" />
       <workItem from="1668934975277" duration="13026000" />
-      <workItem from="1669024501577" duration="21460000" />
+      <workItem from="1669024501577" duration="28080000" />
     </task>
     <task id="LOCAL-00001" summary="feat: implement export to .csv">
       <created>1669044037009</created>
@@ -125,7 +139,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669045979597</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: minor path fix">
+      <created>1669046162651</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669046162651</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: remove extra &quot;export to csv&quot; button">
+      <created>1669046315736</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669046315736</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,6 +178,8 @@
     <MESSAGE value="feat: implement export to .csv" />
     <MESSAGE value="feat: bump infinite scroll, add proper docker support" />
     <MESSAGE value="fix: fix paths" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fix paths" />
+    <MESSAGE value="fix: minor path fix" />
+    <MESSAGE value="fix: remove extra &quot;export to csv&quot; button" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: remove extra &quot;export to csv&quot; button" />
   </component>
 </project>
